@@ -2,7 +2,7 @@
 ---  
 Плохие и хорошие Dockerfile  
 ## Плохой Dockerfile
-\'''
+\'''dockerfile
 FROM python:latest
 
 WORKDIR /app
