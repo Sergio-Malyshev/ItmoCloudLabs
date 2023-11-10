@@ -2,7 +2,7 @@
 ---  
 Плохие и хорошие Dockerfile  
 ## Плохой Dockerfile
-\'''dockerfile
+\```
 FROM python:latest
 
 WORKDIR /app
@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 CMD python docker_lab.py
-\'''
+\```
