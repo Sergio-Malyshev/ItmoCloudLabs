@@ -11,7 +11,7 @@
 ## Ход работы:
 ---  
 1. Скачали .csv файл, соответствующий нашему варианту, и открыли его в Excel. Файл содержит часть данных биллинга провайдера, необходимо сопоставить данные таблицы с документацией Amazon и заполнить таблицук данными.
-![]()  
+![](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/Analytic%20Lab%201/emptytable.png)  
 2. Хедеры:
    `IT Tower` - Описывает технологические функции сервиса, его характеристика; Примеры: storage, ml, developer tools, security и другие.
    `Service Family` - Группа сервисов одного приложения; Примеры:  Application services, Мanagement or provisioning, Threat detection service и другие.
@@ -40,4 +40,4 @@
    `Amazon Route 53` - это масштабируемый и управляемый облачный сервис DNS (Domain Name System), предоставляющий резолверы DNS для маршрутизации пользовательских запросов к приложениям и сервисам в облаке AWS. Он поддерживает множество типов DNS-записей и обеспечивает высокую доступность ваших приложений в интернете.
   
 ## Выводы  
-![Заполненная таблица]()  
+![Заполненная таблица](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/Analytic%20Lab%201/fulltable.png)  
