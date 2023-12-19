@@ -19,7 +19,7 @@ jobs:
         run: docker run --name temp_container -t lab3
 
       - name: Replace text file
-        run: docker cp temp_container:lab3/wish.txt $GITHUB_WORKSPACE
+        run: docker cp temp_container:app/wish.txt $GITHUB_WORKSPACE
 
       - name: Remove the container
         run: docker rm --force temp_container
