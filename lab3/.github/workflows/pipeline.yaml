@@ -1,0 +1,30 @@
+name: "devops-lab-3"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-docker-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Start a container
+        run: docker run temp-container
+
+      - name: Replace wish.txt
+        run: docker cp temp-container:wish.txt $GITHUB_WORKSPACE
+
+      - name: Remove the container
+        run: docker rm temp-container
+
+      - name: Commit the result file
+        run: |
+          git config --global user.name 'github-actions bot'
+          git config --global user.email 'katenika158@gmail.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git add wish.txt
+          git commit -m "Publish result file"
+          git push
