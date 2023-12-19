@@ -1,7 +1,7 @@
 from datetime import datetime
 
 def main():
-    currrent_time = datetime.time
+    currrent_time = datetime.now().time()
 
     with open('wish.txt', 'w') as f:
         f.write('Good luck!\n')
