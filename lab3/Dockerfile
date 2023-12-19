@@ -1,6 +1,6 @@
 FROM python:3.9
 
 WORKDIR /app
-COPY main.py .
+COPY lab3/main.py .
 
 ENTRYPOINT ["python", "main.py"]
