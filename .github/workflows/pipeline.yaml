@@ -29,6 +29,6 @@ jobs:
           git config --global user.name 'github-actions bot'
           git config --global user.email 'katenika158@gmail.com'
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git add lab3/wish.txt
+          git add wish.txt
           git commit -m "Publish result file"
           git push
