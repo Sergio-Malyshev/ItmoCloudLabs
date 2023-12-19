@@ -16,7 +16,7 @@ jobs:
         run: docker build -t lab3 .
 
       - name: Run Docker container
-        run: docker run -t lab3 --name temp_container
+        run: docker run --name temp_container -t lab3
 
       - name: Replace text file
         run: docker cp temp_container:wish.txt $GITHUB_WORKSPACE
