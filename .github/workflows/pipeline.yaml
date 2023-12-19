@@ -19,7 +19,7 @@ jobs:
         run: docker run -t lab3
 
       - name: Replace text file
-        run: docker cp go-container:wish.txt $GITHUB_WORKSPACE
+        run: docker cp lab3:wish.txt $GITHUB_WORKSPACE
 
       - name: Remove the container
         run: docker rm lab3
