@@ -13,7 +13,16 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build the Docker image
-        run: docker build . --file lab3/Dockerfile --tag lab-3:$(date +%s)
+        run: docker build . --file lab3/Dockerfile --name temp-container
+
+      - name: Run Docker container
+        run: Docker run --name temp-container
+
+      - name: Replace text file
+        run: docker cp go-container:wish.txt $GITHUB_WORKSPACE
+
+      - name: Remove the container
+        run: docker rm go-container
 
       - name: Commit the result file
         run: |
