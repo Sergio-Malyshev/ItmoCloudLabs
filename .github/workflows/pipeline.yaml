@@ -3,7 +3,8 @@ name: "devops-lab-3"
 on:
   push:
     branches:
-      - main
+      - devops_lab3
+
 
 jobs:
   build-docker-image:
@@ -12,7 +13,16 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag lab-3:$(date +%s)
+        run: docker build -t lab3 .
+
+      - name: Run Docker container
+        run: docker run --name temp_container -t lab3
+
+      - name: Replace text file
+        run: docker cp temp_container:app/wish.txt $GITHUB_WORKSPACE
+
+      - name: Remove the container
+        run: docker rm --force temp_container
 
       - name: Commit the result file
         run: |
