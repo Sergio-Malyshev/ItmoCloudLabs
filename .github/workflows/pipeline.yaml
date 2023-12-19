@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build the Docker image
-        run: docker build -t --file lab3/Dockerfile lab3
+        run: docker build -t lab3 --file lab3/Dockerfile
 
       - name: Run Docker container
         run: docker run -it lab3
