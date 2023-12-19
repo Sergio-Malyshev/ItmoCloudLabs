@@ -16,13 +16,13 @@ jobs:
         run: docker build -t lab3 .
 
       - name: Run Docker container
-        run: docker run -t lab3
+        run: docker run -t lab3 --name temp_container
 
       - name: Replace text file
         run: docker cp lab3:wish.txt $GITHUB_WORKSPACE
 
       - name: Remove the container
-        run: docker rm lab3
+        run: docker rm --force temp_container
 
       - name: Commit the result file
         run: |
