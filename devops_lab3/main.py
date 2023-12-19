@@ -1,11 +1,12 @@
 from datetime import datetime
 
+
 def main():
-    currrent_time = datetime.now().time()
+    current_time = datetime.now().time()
 
     with open('wish.txt', 'w') as f:
         f.write('Good luck!\n')
-        f.write(f'Current time - {currrent_time}')
+        f.write(f'Current time - {current_time}')
 
 
 main()
