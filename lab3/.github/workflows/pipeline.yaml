@@ -9,16 +9,10 @@ jobs:
   build-docker-image:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      - name: Start a container
-        run: docker run temp-container
-
-      - name: Replace wish.txt
-        run: docker cp temp-container:wish.txt $GITHUB_WORKSPACE
-
-      - name: Remove the container
-        run: docker rm temp-container
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag lab-3:$(date +%s)
 
       - name: Commit the result file
         run: |
