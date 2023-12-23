@@ -48,4 +48,4 @@ Yandex SpeechSense - это технология распознавания и �
   
 ## Выводы
 --- 
-![Заполненная таблица](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/Analytic%20Lab%201/fulltable.png)  
+![Заполненная таблица](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/analytics_lab1/fulltable.png)  
