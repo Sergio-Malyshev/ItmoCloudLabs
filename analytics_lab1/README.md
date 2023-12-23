@@ -11,7 +11,7 @@
 ## Ход работы:
 ---  
 1. Скачали .csv файл, соответствующий нашему варианту, и открыли его в Excel. Файл содержит часть данных биллинга провайдера, необходимо сопоставить данные таблицы с документацией Amazon и заполнить таблицу данными.
-![](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/Analytic%20Lab%201/emptytable.png)  
+![](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/analytics_lab1/emptytable.png)  
 2. Хедеры:
    `IT Tower` - Описывает технологические функции сервиса, его характеристика; Примеры: storage, ml, developer tools, security и другие.
    `Service Family` - Группа сервисов одного приложения; Примеры:  Application services, Мanagement or provisioning, Threat detection service и другие.
