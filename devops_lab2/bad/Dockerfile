@@ -9,4 +9,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD python docker_lab.py
+ENTRYPOINT python docker_lab.py
