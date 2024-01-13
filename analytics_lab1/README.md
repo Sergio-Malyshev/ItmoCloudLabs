@@ -13,11 +13,14 @@
 1. Скачали .csv файл, соответствующий нашему варианту, и открыли его в Excel. Файл содержит часть данных биллинга провайдера, необходимо сопоставить данные таблицы с документацией Amazon и заполнить таблицу данными.
 ![](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/analytics_lab1/emptytable.png)  
 2. Хедеры:
-   `IT Tower` - Описывает технологические функции сервиса, его характеристика; Примеры: storage, ml, developer tools, security и другие.
-   `Service Family` - Группа сервисов одного приложения; Примеры:  Application services, Мanagement or provisioning, Threat detection service и другие.
-   `Service Type` - Тип сервиса; Примеры: Elastic File System, Elastic Inference, ElastiCache, GuardDuty, Kinesis и другие.
-   `Service Sub Type` - Подтип сервиса; Примеры: Fees, Acceleration, Cache Nodes, Security & Compliance и другие.
-   `Service Usage Type` - Тип использования сервиса, определяет тип запросов которые может выполнить пользователь с помощью сервиса; Примеры:  Standart Timed storage, Infrequent Access storage, Tax и другие.  
+   | Наименование         | Описание                                                                                                                                                                     |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| IT Tower              | Группа, ответственная за управление инфраструктурой сервиса, его поддержку и характеристику. Примеры: Storage, Machine Learning, Database, Security, Analytics, Compute           |
+| Service Family        | Группа сервисов, которая выполняет конкретную инфраструктурную задачу и связана с конкретным приложением. Примеры: Application services, Management or provisioning, GPU-powered acceleration, In-memory caching service, Threat detection service и др |
+| Service Type          | Тип сервиса внутри определённой группы сервисов. Примеры: Elastic File System, Elastic Inference, ElastiCache, GuardDuty, Kinesis и др.                                          |
+| Service Sub Type      | Уточнённый подтип сервиса с определённой функцией. Примеры: Fees, Acceleration, Cache Nodes, Security & Compliance и др.                                                       |
+| Service Usage Type    | Тип использования сервиса с учетом подтипа (определяет, какой тип запросов может выполнять пользователь с помощью конкретного сервиса). Примеры: Standard Timed storage, Infrequent Access storage, Tax и др.                                  |
+ 
 3. Сервисы которые мы определили с помощью анализа:    
    `Amazon Elastic File System` - Amazon EFS - это управляемый облачный сервис хранения файлов, предоставляющий масштабируемый и общий доступ к файлам для различных приложений и сервисов в облаке AWS. Он обеспечивает удобство использования и масштабируемость, позволяя хранить и обрабатывать файлы из разных экземпляров Amazon EC2.
      
