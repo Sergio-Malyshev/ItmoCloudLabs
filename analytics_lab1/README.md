@@ -1,4 +1,4 @@
-# Лабораторная №1
+[# Лабораторная №1
 ---  
 ## Цель работы:
 ---  
@@ -53,4 +53,4 @@ Yandex SpeechSense - это технология распознавания и �
 ## Выводы
 ---  
 В ходе выполнения лабораторной работы мы много узнали об облачных сервисах Amazon AWS и нашли отечественные аналоги для некоторых.  
-![Заполненная таблица](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/analytics_lab1/fulltable.png)  
+![Заполненная таблица](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/analytics_lab1/fulltable.png)  ](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/analytics_lab1/emptytable.png)https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/analytics_lab1/emptytable.png
