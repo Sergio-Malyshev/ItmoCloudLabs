@@ -12,13 +12,13 @@
 ---  
 1. Скачали .csv файл, соответствующий нашему варианту, и открыли его в Excel. Файл содержит часть данных биллинга провайдера, необходимо сопоставить данные таблицы с документацией Amazon и заполнить таблицу данными.
 ![](https://github.com/Sergio-Malyshev/ItmoCloudLabs/blob/main/analytics_lab1/emptytable.png)  
-2. Хедеры:
-   | Наименование         | Описание                                                                                                                                                                     |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+2. Хедеры:  
+| Наименование         | Описание                                                                                                                                                                           |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | IT Tower              | Группа, ответственная за управление инфраструктурой сервиса, его поддержку и характеристику. Примеры: Storage, Machine Learning, Database, Security, Analytics, Compute           |
 | Service Family        | Группа сервисов, которая выполняет конкретную инфраструктурную задачу и связана с конкретным приложением. Примеры: Application services, Management or provisioning, GPU-powered acceleration, In-memory caching service, Threat detection service и др |
-| Service Type          | Тип сервиса внутри определённой группы сервисов. Примеры: Elastic File System, Elastic Inference, ElastiCache, GuardDuty, Kinesis и др.                                          |
-| Service Sub Type      | Уточнённый подтип сервиса с определённой функцией. Примеры: Fees, Acceleration, Cache Nodes, Security & Compliance и др.                                                       |
+| Service Type          | Тип сервиса внутри определённой группы сервисов. Примеры: Elastic File System, Elastic Inference, ElastiCache, GuardDuty, Kinesis и др.                                           |
+| Service Sub Type      | Уточнённый подтип сервиса с определённой функцией. Примеры: Fees, Acceleration, Cache Nodes, Security & Compliance и др.                                                          |
 | Service Usage Type    | Тип использования сервиса с учетом подтипа (определяет, какой тип запросов может выполнять пользователь с помощью конкретного сервиса). Примеры: Standard Timed storage, Infrequent Access storage, Tax и др.                                  |
  
 3. Сервисы которые мы определили с помощью анализа:    
